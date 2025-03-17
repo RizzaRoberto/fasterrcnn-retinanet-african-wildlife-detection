@@ -1,6 +1,6 @@
 This repository contains a complete pipeline for training and evaluating an object detection model using Faster R-CNN and RetinaNet with a ResNet-50 backbone. 
 
-Features
+#Features
 
 ✔️ Dataset Preparation:
 
@@ -32,7 +32,7 @@ Features
 - Performs quantitative evaluation on test data.
 - Conducts qualitative testing on sample images.
 
-Dataset
+#Dataset
 
 The models were trained on the AfricanWildlife Dataset --> https://www.kaggle.com/datasets/biancaferreira/african-wildlife , which was sourced from the Kaggle platform.
 This dataset was manually created by collecting images from Google and labeling them in the YOLO format. It represents four species commonly found in South African nature reserves: Buffalo, Elephant, Rhino, and Zebra.
@@ -44,7 +44,7 @@ The dataset is organized into four separate folders, each corresponding to a spe
 
 Each dataset sample consists of a JPEG image and a corresponding text file containing annotation data in YOLO format. The .txt files store class labels and bounding box coordinates, structured according to the YOLO annotation system.
 
-Experiment phase
+#Experiment phase
 
 We trained both models (Faster R-CNN and RetinaNet) using various weight decay values, monitoring the loss and mAP curves over 15 epochs. For both models, the training phase concluded after 12 epochs, as no significant improvements were observed after this point.
 
@@ -55,6 +55,6 @@ For Faster R-CNN, with weight decay = 0.001 and weight decay = 0.0001, the model
 For RetinaNet, with weight decay = 0.001 and weight decay = 0.0001, the behavior was similar: the model learned quickly, reaching stable convergence after the initial epochs and showing small oscillations in the mAP metrics.
 
 
-Pre-trained weights
+#Pre-trained weights
 
 These weights are available for direct use in your experiments. Simply download the provided weights and use them to run inference or fine-tune the models on your own data.
