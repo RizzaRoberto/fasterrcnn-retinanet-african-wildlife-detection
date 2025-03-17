@@ -84,3 +84,19 @@ The models were evaluated using the mAP (mean Average Precision) metric at the I
 ## IoU = 0.50
 ![quantitative](Img/Quantitative/Quantitative_test_0.50.png)
 
+Based on the quantitative test results, we can conclude that the RetinaNet model outperformed the Faster R-CNN model across all considered classes, both with IoU equal to 0.50:0.95 and with IoU equal to 0.50.
+
+In particular, we observe that RetinaNet achieved higher AP values in all classes with IoU 0.50:0.95, highlighting better object detection accuracy under more stringent conditions.
+However, with IoU 0.50, the results are more "close." We see that Faster R-CNN has a slight advantage in some classes. This indicates that, although RetinaNet is generally more precise, Faster R-CNN can be very competitive in less strict scenarios.
+
+# Qualitative Tests
+In addition to the quantitative tests, we conducted qualitative tests to compare the performance of the Faster R-CNN and RetinaNet models. Below, we present predictions on a set of 5 images for each class, showing the predicted bounding boxes, the predicted label, and the associated confidence scores.
+
+Here is the mapping between numbers and object classes:
+
+1 → Buffalo
+2 → Elephant
+3 → Rhino
+4 → Zebra
+
+
