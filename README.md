@@ -54,9 +54,16 @@ For Faster R-CNN, with weight decay = 0.001 and weight decay = 0.0001, the model
 ![loss_train_faster](Img/FasterRCNN/AP_50_Loss.png)
 ![loss_train_faster](Img/FasterRCNN/AP_50_95_Loss.png)
 
+
 For RetinaNet, with weight decay = 0.001 and weight decay = 0.0001, the behavior was similar: the model learned quickly, reaching stable convergence after the initial epochs and showing small oscillations in the mAP metrics.
 
 
+![loss_train_faster](Img/RetinaNet/trainLoss.png)
+![loss_train_faster](Img/RetinaNet/AP50_Loss.png)
+![loss_train_faster](Img/RetinaNet/AP_50_95_Loss.png)
+
 # Pre-trained weights
 
-These weights are available for direct use in your experiments. Simply download the provided weights and use them to run inference or fine-tune the models on your own data.
+The weights provided are available for direct use in your experiments. Simply download the provided weights and use them to run inference or fine-tune the models on your own data.
+
+
