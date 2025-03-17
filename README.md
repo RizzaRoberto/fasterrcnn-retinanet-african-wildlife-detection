@@ -51,19 +51,29 @@ We trained both models (Faster R-CNN and RetinaNet) using various weight decay v
 For Faster R-CNN, with weight decay = 0.001 and weight decay = 0.0001, the model achieved good convergence and learned quickly to identify objects, with a plateau in the mAP metrics after a few epochs.
 
 ![loss_train_faster](Img/FasterRCNN/TrainLoss.png)
-![loss_train_faster](Img/FasterRCNN/AP_50_Loss.png)
-![loss_train_faster](Img/FasterRCNN/AP_50_95_Loss.png)
+![loss2_train_faster](Img/FasterRCNN/AP_50_Loss.png)
+![loss3_train_faster](Img/FasterRCNN/AP_50_95_Loss.png)
 
 
 For RetinaNet, with weight decay = 0.001 and weight decay = 0.0001, the behavior was similar: the model learned quickly, reaching stable convergence after the initial epochs and showing small oscillations in the mAP metrics.
 
 
-![loss_train_faster](Img/RetinaNet/trainLoss.png)
-![loss_train_faster](Img/RetinaNet/AP50_Loss.png)
-![loss_train_faster](Img/RetinaNet/AP_50_95_Loss.png)
+![loss_train_retina](Img/RetinaNet/trainLoss.png)
+![loss2_train_retina](Img/RetinaNet/AP50_Loss.png)
+![loss3_train_retina](Img/RetinaNet/AP_50_95_Loss.png)
 
 # Pre-trained weights
 
 The weights provided are available for direct use in your experiments. Simply download the provided weights and use them to run inference or fine-tune the models on your own data.
+You can find the weights at the following link drive --> https://drive.google.com/drive/folders/111IgjYV68_NPVwJrC7_JUZ6M41rRikLw?usp=sharing 
 
+# Quantitative Tests
+
+The models were evaluated using the mAP (mean Average Precision) metric at the IoU (Intersection over Union) threshold of 0.50:0.95 and 0.50.
+
+##IoU = 0.50:0.95
+![quantitative](Img/Quantitative/Quantitative_test_0.50_0.95.png)
+
+##IoU = 0.50
+![quantitative](Img/Quantitative/Quantitative_test_0.50.png)
 
