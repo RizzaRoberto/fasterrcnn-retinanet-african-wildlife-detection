@@ -50,7 +50,7 @@ We trained both models (Faster R-CNN and RetinaNet) using various weight decay v
 
 For Faster R-CNN, with weight decay = 0.001 and weight decay = 0.0001, the model achieved good convergence and learned quickly to identify objects, with a plateau in the mAP metrics after a few epochs.
 
-
+![loss_train_faster](img/FasterRCNN/TrainLoss.png)
 
 For RetinaNet, with weight decay = 0.001 and weight decay = 0.0001, the behavior was similar: the model learned quickly, reaching stable convergence after the initial epochs and showing small oscillations in the mAP metrics.
 
