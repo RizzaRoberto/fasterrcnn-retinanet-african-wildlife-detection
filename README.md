@@ -48,18 +48,25 @@ Each dataset sample consists of a JPEG image and a corresponding text file conta
 
 We trained both models (Faster R-CNN and RetinaNet) using various weight decay values, monitoring the loss and mAP curves over 15 epochs. For both models, the training phase concluded after 12 epochs, as no significant improvements were observed after this point.
 
-For Faster R-CNN, with weight decay = 0.001 and weight decay = 0.0001, the model achieved good convergence and learned quickly to identify objects, with a plateau in the mAP metrics after a few epochs.
+## FasterRCNN
 
+For Faster R-CNN, with weight decay = 0.001 and weight decay = 0.0001, the model achieved good convergence and learned quickly to identify objects, with a plateau in the mAP metrics after a few epochs.
+## Loss Train 
 ![loss_train_faster](Img/FasterRCNN/TrainLoss.png)
+## Loss AP 0.50 
 ![loss2_train_faster](Img/FasterRCNN/AP_50_Loss.png)
+## Loss AP 0.50:0.95
 ![loss3_train_faster](Img/FasterRCNN/AP_50_95_Loss.png)
 
+## RetinaNet
 
 For RetinaNet, with weight decay = 0.001 and weight decay = 0.0001, the behavior was similar: the model learned quickly, reaching stable convergence after the initial epochs and showing small oscillations in the mAP metrics.
 
-
+## Loss Train
 ![loss_train_retina](Img/RetinaNet/trainLoss.png)
+## Loss AP 0.50
 ![loss2_train_retina](Img/RetinaNet/AP50_Loss.png)
+## Loss AP 0.50:0.95
 ![loss3_train_retina](Img/RetinaNet/AP_50_95_Loss.png)
 
 # Pre-trained weights
@@ -71,9 +78,9 @@ You can find the weights at the following link drive --> https://drive.google.co
 
 The models were evaluated using the mAP (mean Average Precision) metric at the IoU (Intersection over Union) threshold of 0.50:0.95 and 0.50.
 
-##IoU = 0.50:0.95
+## IoU = 0.50:0.95
 ![quantitative](Img/Quantitative/Quantitative_test_0.50_0.95.png)
 
-##IoU = 0.50
+## IoU = 0.50
 ![quantitative](Img/Quantitative/Quantitative_test_0.50.png)
 
