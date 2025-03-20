@@ -13,7 +13,7 @@ This repository contains a complete pipeline for training and evaluating an obje
 - Implements AnimalDataset, a PyTorch dataset class to load images and annotations.
 - Converts bounding boxes from YOLO format to absolute coordinates.
   
-✔️ Model Training:
+✔️ Model Training (Fine-Tuning):
 
 - Loads a pretrained Faster R-CNN ResNet-50 model and fine-tunes it on the dataset.
 - Splits data into 70% train, 20% test, and 10% validation.
@@ -99,4 +99,30 @@ Here is the mapping between numbers and object classes:
 3 → Rhino
 4 → Zebra
 
+## Buffalo
+### FasterRCNN
+![qualitative](Img/Qualitative/Buffalo_FasterRCNN.png)
 
+### RetinaNet
+![qualitative](Img/Qualitative/Buffalo_RetinaNet.png)
+
+## Elephant
+### FasterRCNN
+![qualitative](Img/Qualitative/Elephant_FasterRCNN.png)
+
+### RetinaNet
+![qualitative](Img/Qualitative/Elephant_RetinaNet.png)
+
+## Rhino
+### FasterRCNN
+![qualitative](Img/Qualitative/Rhino_FasterRCNN.png)
+
+### RetinaNet
+![qualitative](Img/Qualitative/Rhino_RetinaNet.png)
+
+## Zebra
+### FasterRCNN
+![qualitative](Img/Qualitative/Zebra_FasterRCNN.png)
+
+### RetinaNet
+![qualitative](Img/Qualitative/Zebra_RetinaNet.png)
