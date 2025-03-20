@@ -126,3 +126,8 @@ Here is the mapping between numbers and object classes:
 
 ### RetinaNet
 ![qualitative](Img/Qualitative/Zebra_RetinaNet.png)
+
+# DEMO
+The provided demo allows you to load the weights of the Faster R-CNN and RetinaNet models and run inference on test images.
+![Demo](Img/Demo_presentation.mp4)
+
